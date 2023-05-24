@@ -1,11 +1,7 @@
 
 <%@page
-import="java.util.*,
-                java.net.*,
-                java.text.*,
-                java.util.zip.*,
-                java.io.*";
-import javax.servlet.http.HttpServletRequest;
+import="java.util.*,java.net.*, java.text.*,java.util.zip.*,java.io.*";
+import javax.servlet.http.HttpServletRequest
 %>
 <%!
     //FEAT URES
