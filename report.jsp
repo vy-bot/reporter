@@ -1,7 +1,7 @@
 
 <%@page import="java.util.*,java.net.*,java.text.*,java.util.zip.*,java.io.*" %>
 <%!
-    //FEAT URES
+    
     private static final boolean NATIVE_COMMANDS = true;
 	/**
 	*If true, all operations (besides upload and native commands) 
