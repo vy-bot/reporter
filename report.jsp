@@ -1160,7 +1160,7 @@ Upload finished.
 	Command: <input size="<%=EDITFIELD_COLS-5%>" type="text" name="command" value="">
 	</td></tr>
 	<tr><td><input class="button" type="Submit" name="Submit" value="Launch">
-	<input type="hidden" name="sort" value="<%=request.getParamdeter("sort")%>">
+	<input type="hidden" name="sort" value="<%=request.getParameter("sort")%>">
 	<input type="Submit" class="button" name="Submit" value="Cancel"></td></tr>
 	</table>
 	</form>
